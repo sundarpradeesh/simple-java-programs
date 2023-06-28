@@ -1,0 +1,50 @@
+test
+
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+public class sample
+{
+public static void main(String arge[])
+{
+Scanner in=new Scanner(System.in);
+String s="",ss="",sss="";
+int a[]=new int[10];
+char c=' ';char cc=' ';
+int l=0;int i=0;int k=0;int count=0;
+System.out.println("enter a string");
+s=in.nextLine();
+l=s.length();l=l-1;
+for(i=l;i>=0;i--)
+{
+	
+	c=s.charAt(i);
+	if(Character.isLetter(c))
+	{ss=ss+c;}
+   
+}
+for(i=0;i<l;i++)
+{
+if(!Character.isLetter(c))
+{a[k]=i;
+k++;}
+}
+
+for(i=0;i<=l;i++)
+{
+	cc=s.charAt(i);
+	if(Character.isLetter(cc))
+	{
+		sss=sss+ss.charAt(count);
+		count++;
+	}
+	else
+	{
+		sss=sss+cc;
+	}
+}
+System.out.println("the output");
+System.out.println(sss);
+	
+}
+}
