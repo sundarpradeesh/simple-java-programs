@@ -1,0 +1,23 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+public class contains
+{
+	public static void main(String args[])
+	{
+		Scanner in=new Scanner(System.in);
+		String s,ss;
+		System.out.println("enter a string");
+		s=in.nextLine();
+		System.out.println("enter a substring");
+		ss=in.nextLine();
+		if(s.contains(ss))
+		{
+			System.out.println(ss+" is present in "+s);
+		}
+		else
+		{
+			System.out.println(ss+" is not present in "+s);
+		}
+	}
+}
