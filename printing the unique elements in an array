@@ -1,0 +1,25 @@
+import java.util.*;
+public class uniq
+{
+public static void main(String []args)
+{
+	int n;
+	Scanner sc=new Scanner(System.in);
+		ArrayList ll=new ArrayList();
+
+	n=sc.nextInt();
+	int []ar=new int[n];
+
+	for(int i=0;i<n;i++)
+		{ar[i]=sc.nextInt();
+		}
+		Arrays.sort(ar);
+	for(int i=0;i<n-1;i++)
+	{
+	if(ar[i]!=ar[i+1])
+{	ll.add(ar[i]);
+	}}
+	ll.add(ar[n-1]);
+	for(int m=0;m<ll.size();m++)
+		System.out.println(ll.get(m));
+}}	
