@@ -1,0 +1,32 @@
+import java.util.*;
+import java.io.*;
+import java.lang.*;
+public class subpalindrome
+{
+	public static void main(String args[])
+	{
+		Scanner in=new Scanner(System.in);
+		String s="",ss="",sss="";
+		char c;
+		int i=0,j=0,l=0,k=0,ll=0;
+		System.out.println("enter a string");
+		s=in.nextLine();
+		l=s.length();
+		for(j=0;j<l;j++)
+		{
+			for(i=j+1;i<=l;i++)
+			{
+				ss=s.substring(j,i);
+				ll=ss.length()-1;
+				for(k=ll;k>=0;k--)
+				{
+				sss=sss+ss.charAt(k);
+				}
+				if(ss.equals(sss) && (sss.length()>1)){
+				System.out.println(ss);}
+				ll=0;
+				sss="";
+			}
+		}
+	}
+}
